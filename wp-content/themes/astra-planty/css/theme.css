@@ -1,0 +1,31 @@
+ /* Mise en forme Header  */
+ .main-header-menu .menu-item:last-child {
+    background-color: #DC9F96;
+ }
+
+ .main-header-menu .menu-item:last-child .menu-link {
+    color: white
+ }
+
+/* Mise en forme footer  */
+.site-footer {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+ }
+ /* Mise en forme Page Accueil  */
+#premierBlocAccueil {
+    border-bottom: 20px solid black;
+    border-radius: 0 0 20px 20px;
+}
+
+#brancheGaucheAccueil {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ /* Mise en forme Page Commander  */
+.page-id-46 .site-content {
+    background-color: #3B8E46;
+ }

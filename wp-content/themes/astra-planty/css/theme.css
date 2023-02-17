@@ -13,18 +13,56 @@
     text-align: center;
     color: black;
  }
- /* Mise en forme Page Accueil  */
-#premierBlocAccueil {
-    border-bottom: 20px solid black;
-    border-radius: 0 0 20px 20px;
+
+ /* Mise en forme Page Accueil*/
+
+ .premierBlocAccueil {
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
 
-#brancheGaucheAccueil {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.deuxiemeBlocAccueil {
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
+.wp-block-image {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
+    background-repeat: no-repeat;
+    background-position: -425% 50%; 
+}
+
+.wp-image-38 {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-3.png);
+    background-repeat: no-repeat;
+    background-position: 525% 50%; 
+}
+
+.largeurImageGouts {
+    max-width: 394px;
+}
+
+ /* Mise en forme Page Nous rencontrer*/
+
+ .blocNousRencontrer {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 20% 10%;  
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.blocEquipe {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 90% 100%;  
+}
+
+.wp-image-19 {
+    background-color: #E3D9D0;
+}
  /* Mise en forme Page Commander  */
 .page-id-46 .site-content {
     background-color: #3B8E46;

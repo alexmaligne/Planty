@@ -17,13 +17,13 @@
  /* Mise en forme Page Accueil*/
 
  .premierBlocAccueil {
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
 }
 
 .deuxiemeBlocAccueil {
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
 
 .wp-block-image {
@@ -38,8 +38,19 @@
     background-position: 525% 50%; 
 }
 
+.wp-image-22 {
+    max-width: 393px;
+    max-height: 262px;
+}
+
 .largeurImageGouts {
+    max-width: 393px;
+    max-height: 262px;
+}
+
+.largeurImagePamplemousse {
     max-width: 394px;
+    max-height: 263px;
 }
 
  /* Mise en forme Page Nous rencontrer*/
@@ -63,6 +74,28 @@
 .wp-image-19 {
     background-color: #E3D9D0;
 }
+
+ /* Mise en forme Page Nous rencontrer - Formulaire de contact */
+form.wpcf7-form label {
+    font-family: "Syne";
+    font-size: 20px;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DC9F96;
+    color: white
+}
+
+form.wpcf7-form {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: -55% 90%;  
+}
+
  /* Mise en forme Page Commander  */
 .page-id-46 .site-content {
     background-color: #3B8E46;

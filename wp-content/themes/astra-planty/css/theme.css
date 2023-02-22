@@ -28,7 +28,7 @@
 
 .wp-block-image {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat    ;
     background-position: -425% 50%; 
 }
 
@@ -89,7 +89,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     color: white
 }
 
-form.wpcf7-form {
+.cf7contacter {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -99,4 +99,23 @@ form.wpcf7-form {
  /* Mise en forme Page Commander  */
 .page-id-46 .site-content {
     background-color: #3B8E46;
+ }
+ 
+ /* Mise en forme Page Commander - Formulaire de commande  */
+ 
+div.cf7quantites {
+    border: none;
+ }
+
+hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
+    color: white;
+}
+
+ div.cf7commander {
+    color: white; 
+    border: none;
+ }
+
+ div.cf7commander.h3 {
+    color: white
  }

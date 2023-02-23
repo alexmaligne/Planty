@@ -17,8 +17,9 @@
  /* Mise en forme Page Accueil*/
 
  .premierBlocAccueil {
-    border-bottom-right-radius: 15%;
-    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 50% 10%;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom: 10px solid #CFC5BC;
 }
 
 .deuxiemeBlocAccueil {
@@ -26,31 +27,15 @@
     border-bottom-left-radius: 5%;
 }
 
-.wp-block-image {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
-    background-repeat: no-repeat    ;
-    background-position: -425% 50%; 
-}
-
-.wp-image-38 {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-3.png);
-    background-repeat: no-repeat;
-    background-position: 525% 50%; 
-}
-
-.wp-image-22 {
-    max-width: 393px;
-    max-height: 262px;
+.feuilles {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png), url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 28% center, 70% center; 
 }
 
 .largeurImageGouts {
     max-width: 393px;
     max-height: 262px;
-}
-
-.largeurImagePamplemousse {
-    max-width: 394px;
-    max-height: 263px;
 }
 
  /* Mise en forme Page Nous rencontrer*/
@@ -103,7 +88,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
  
  /* Mise en forme Page Commander - Formulaire de commande  */
  
-div.cf7quantites {
+.cf7quantites td {
     border: none;
  }
 
@@ -111,11 +96,21 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     color: white;
 }
 
- div.cf7commander {
+div.cf7commander {
     color: white; 
+ }
+
+ table {
     border: none;
  }
 
- div.cf7commander.h3 {
-    color: white
+ .cf7commander td {
+    border-left: none;
+    border-bottom: none;
+    padding-right: 40px;
+    padding-left: 40px;
+ }
+
+ .cf7commander td:last-child {
+    border-right: none;
  }

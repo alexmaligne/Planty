@@ -33,13 +33,46 @@
     background-position: 28% center, 70% center; 
 }
 
-.imagesAccueil {
-    max-width: 393px;
-    max-height: 262px;
-    object-fit: none;
+.fraiseAccueil {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 393px;
+    height: 262px;
 }
 
- /* Mise en forme Page Nous rencontrer*/
+.pamplemousseAccueil {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 394px;
+    height: 263px;
+}
+
+.framboiseAccueil {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 393px;
+    height: 262px;
+}
+
+.citronAccueil {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 393px;
+    height: 262px;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Mise en forme Page Nous rencontrer*/
 
  .blocNousRencontrer {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
@@ -54,14 +87,14 @@
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
     background-size: 10%;
     background-repeat: no-repeat;
-    background-position: 90% 100%;  
+    background-position: 88% 100%;  
 }
 
 .wp-image-19 {
     background-color: #E3D9D0;
 }
 
- /* Mise en forme Page Nous rencontrer - Formulaire de contact */
+ /* Formulaire de contact */
  div.cf7contacter {
     margin-left : 35%;
     margin-right : 35%;
@@ -92,11 +125,39 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background-color: #3B8E46;
  }
 
- .texteImageCentre {
-   
- }
+ .fraiseCommander {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 193px;
+    height: 129px;
+}
 
- /* Mise en forme Page Commander - Formulaire de commande  */
+.pamplemousseCommander {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 193px;
+    height: 129px;
+}
+
+.framboiseCommander {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 193px;
+    height: 129px;
+}
+
+.citronCommander {
+    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 193px;
+    height: 129px;
+}
+
+ /* Formulaire de commande  */
  
  div.cf7quantites {
     display: flex;
@@ -116,6 +177,10 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     color: white;
 }
+
+.cf7commander h4 {
+    color: white;
+ }
 
 div.cf7commander {
     color: white; 

@@ -23,8 +23,8 @@
 }
 
 .deuxiemeBlocAccueil {
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 50% 5%;
+    border-bottom-left-radius: 50% 5%;
 }
 
 .feuilles {
@@ -33,9 +33,10 @@
     background-position: 28% center, 70% center; 
 }
 
-.largeurImageGouts {
+.imagesAccueil {
     max-width: 393px;
     max-height: 262px;
+    object-fit: none;
 }
 
  /* Mise en forme Page Nous rencontrer*/
@@ -45,8 +46,8 @@
     background-size: 10%;
     background-repeat: no-repeat;
     background-position: 20% 10%;  
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50% 10%;
+    border-bottom-left-radius: 50% 10%;
 }
 
 .blocEquipe {
@@ -61,6 +62,11 @@
 }
 
  /* Mise en forme Page Nous rencontrer - Formulaire de contact */
+ div.cf7contacter {
+    margin-left : 35%;
+    margin-right : 35%;
+ }
+
 form.wpcf7-form label {
     font-family: "Syne";
     font-size: 20px;
@@ -74,22 +80,37 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     color: white
 }
 
-.cf7contacter {
+.fleur {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
-    background-size: 200px;
+    background-size: 120px;
     background-repeat: no-repeat;
-    background-position: -55% 90%;  
+    background-position: 40% 81%;  
 }
 
  /* Mise en forme Page Commander  */
 .page-id-46 .site-content {
     background-color: #3B8E46;
  }
- 
+
+ .texteImageCentre {
+   
+ }
+
  /* Mise en forme Page Commander - Formulaire de commande  */
  
-.cf7quantites td {
-    border: none;
+ div.cf7quantites {
+    display: flex;
+    justify-content: center;
+ }
+
+ .cf7quantites td {
+    border-left: none;
+    border-right: none;
+ }
+
+ .cf7quantites p {
+    display: flex;
+    justify-content: center;
  }
 
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
@@ -107,8 +128,6 @@ div.cf7commander {
  .cf7commander td {
     border-left: none;
     border-bottom: none;
-    padding-right: 40px;
-    padding-left: 40px;
  }
 
  .cf7commander td:last-child {

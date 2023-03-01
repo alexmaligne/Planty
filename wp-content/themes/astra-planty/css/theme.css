@@ -87,7 +87,7 @@ h5 {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
     background-size: 10%;
     background-repeat: no-repeat;
-    background-position: 88% 100%;  
+    background-position: 90% 100%;  
 }
 
 .wp-image-19 {
@@ -104,6 +104,16 @@ form.wpcf7-form label {
     font-family: "Syne";
     font-size: 20px;
 }
+  
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+ }
+
+ textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+ }
 
 input.wpcf7-form-control.has-spinner.wpcf7-submit {
     display: block;
@@ -125,58 +135,117 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background-color: #3B8E46;
  }
 
- .fraiseCommander {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
-    background-repeat: no-repeat;
-    background-position: center center; 
-    width: 193px;
-    height: 129px;
+ /* Formulaire de commande - Quantités */
+
+.fraiseCommander {
+   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-position: center center; 
+   width: 193px;
+   height: 128px;
 }
 
 .pamplemousseCommander {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-tOitjphtIXU-unsplash-1.png);
-    background-repeat: no-repeat;
-    background-position: center center; 
-    width: 193px;
-    height: 129px;
+   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-position: center center; 
+   width: 193px;
+   height: 128px;
 }
 
 .framboiseCommander {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
-    background-repeat: no-repeat;
-    background-position: center center; 
-    width: 193px;
-    height: 129px;
+   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-position: center center; 
+   width: 193px;
+   height: 128px;
 }
 
 .citronCommander {
-    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
-    background-repeat: no-repeat;
-    background-position: center center; 
-    width: 193px;
-    height: 129px;
+   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-position: center center; 
+   width: 193px;
+   height: 128px;
 }
 
- /* Formulaire de commande  */
+h6 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
  
- div.cf7quantites {
-    display: flex;
-    justify-content: center;
- }
+.boutonQuantite {
+   background-color: white;
+}
 
- .cf7quantites td {
+.boutonQuantite2 {
+   background-color: white;
+}
+
+.boutonOk {
+   background-color: white;
+}
+
+
+.cf7quantites td {
+    border-bottom: none;
     border-left: none;
     border-right: none;
  }
 
+ .cf7quantites input.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number {
+    width: 82px;
+    height: 56px;
+    background-color: #DC9F96;
+ }
+
+ .cf7quantites input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 100px;
+    height: 56px;
+    background-color: #E0B9B4;
+ }
+
+ .texteFraise {
+    position: absolute;
+    top: 90px;
+    left: 110px;
+ }
+
+ .textePamplemousse {
+    position: absolute;
+    top: 90px;
+    left: 380px;
+ }
+
+ .texteFramboise {
+    position: absolute;
+    top: 90px;
+    left: 710px;
+ }
+
+ .texteCitron {
+    position: absolute;
+    top: 90px;
+    left: 1010px;
+ }
+
+ .cf7quantites h6 {
+    font-family: "syne";
+    font-size: 20px;
+    color: white;
+ }
+
  .cf7quantites p {
     display: flex;
-    justify-content: center;
  }
 
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     color: white;
 }
+
+ /* Formulaire de commande - Commander */
 
 .cf7commander h4 {
     color: white;
@@ -185,8 +254,8 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 div.cf7commander {
     color: white; 
  }
-
- table {
+ 
+table {
     border: none;
  }
 
@@ -197,4 +266,17 @@ div.cf7commander {
 
  .cf7commander td:last-child {
     border-right: none;
+    padding-left: 40px;
+ }
+
+ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    width: 550px;
+    margin-right: 35px;
+ }
+
+ @media screen and (min-width:350, max-width:633) {
+   .is-layout-flow.wp-block-column {
+     display: flex;
+     flex-direction: column;
+   }
  }

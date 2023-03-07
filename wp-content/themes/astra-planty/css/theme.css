@@ -96,9 +96,9 @@ h5 {
 
  /* Formulaire de contact */
  div.cf7contacter {
-    margin-left : 35%;
-    margin-right : 35%;
- }
+   margin-left : 35%;
+   margin-right : 35%;
+}
 
 form.wpcf7-form label {
     font-family: "Syne";
@@ -127,7 +127,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
     background-size: 120px;
     background-repeat: no-repeat;
-    background-position: 40% 81%;  
+    background-position: 34% 88%;  
 }
 
  /* Mise en forme Page Commander  */
@@ -135,101 +135,62 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background-color: #3B8E46;
  }
 
+ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
+   color: white;
+   border-width: 1px;
+}
+
  /* Formulaire de commande - Quantités */
-
-.fraiseCommander {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
-   background-repeat: no-repeat;
-   background-position: center center; 
-   width: 193px;
-   height: 128px;
-}
-
-.pamplemousseCommander {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-tOitjphtIXU-unsplash-1.png);
-   background-repeat: no-repeat;
-   background-position: center center; 
-   width: 193px;
-   height: 128px;
-}
-
-.framboiseCommander {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
-   background-repeat: no-repeat;
-   background-position: center center; 
-   width: 193px;
-   height: 128px;
-}
-
-.citronCommander {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
-   background-repeat: no-repeat;
-   background-position: center center; 
-   width: 193px;
-   height: 128px;
-}
-
-h6 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.cf7quantites h4 {
    color: white;
 }
- 
-.boutonQuantite {
-   background-color: white;
-}
-
-.boutonQuantite2 {
-   background-color: white;
-}
-
-.boutonOk {
-   background-color: white;
-}
-
 
 .cf7quantites td {
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
- }
+   border-bottom: none;
+   border-left: none;
+   border-right: none;
+}
 
- .cf7quantites input.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number {
-    width: 82px;
-    height: 56px;
-    background-color: #DC9F96;
- }
+.cf7quantites table {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+}
 
- .cf7quantites input.wpcf7-form-control.has-spinner.wpcf7-submit {
-    width: 100px;
-    height: 56px;
-    background-color: #E0B9B4;
- }
+.cf7quantites table tbody tr td {
+   position: relative;
+}
 
- .texteFraise {
-    position: absolute;
-    top: 90px;
-    left: 110px;
- }
+.cf7quantites table tbody tr td p {
+   margin: 0;
+}
 
- .textePamplemousse {
-    position: absolute;
-    top: 90px;
-    left: 380px;
- }
+.texteFraise {
+   position: absolute;
+   text-align: center;
+   top: calc(50% - 15px);
+   left: calc(50% - 61px);
+}
 
- .texteFramboise {
-    position: absolute;
-    top: 90px;
-    left: 710px;
- }
+.textePamplemousse {
+   position: absolute;
+   text-align: center;
+   top: calc(50% - 20px);
+   left: calc(50% - 61px);
+}
 
- .texteCitron {
-    position: absolute;
-    top: 90px;
-    left: 1010px;
- }
+.texteFramboise {
+   position: absolute;
+   text-align: center;
+   top: calc(50% - 20px);
+   left: calc(50% - 45px);
+}
+
+.texteCitron {
+   position: absolute;
+   text-align: center;
+   top: calc(50% - 15px);
+   left: calc(50% - 61px);
+}
 
  .cf7quantites h6 {
     font-family: "syne";
@@ -237,13 +198,49 @@ h6 {
     color: white;
  }
 
- .cf7quantites p {
-    display: flex;
- }
-
-hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
-    color: white;
+.field-quantity {
+   display: flex;
+   border-radius: 8px;
+   width: 110px;
 }
+
+.field-quantity .wpcf7-form-control.wpcf7-text {
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   height: 65px;
+   margin-bottom: 40px;
+}
+
+.ajouter, .soustraire {
+   color: white;
+   text-align: center;
+   background-color: #DC9F96;
+   padding: 0 10px;
+   height: 32.5px;
+}
+
+.ajouter {
+   border-top-right-radius: 8px;
+   border-bottom: 1px solid white;
+}
+
+.soustraire {
+   border-bottom-right-radius: 8px;
+}
+
+.cf7quantites input.wpcf7-form-control.has-spinner.wpcf7-submit {
+   width: 100%;
+   height: 65px;
+   border-radius: 5px;
+   background-color: #E0B9B4;
+   margin-bottom: 40px;
+}
+
+.cf7quantites .wpcf7-spinner {
+   display: none;
+ }
 
  /* Formulaire de commande - Commander */
 
@@ -266,15 +263,19 @@ table {
 
  .cf7commander td:last-child {
     border-right: none;
-    padding-left: 40px;
  }
 
- input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
-    width: 550px;
-    margin-right: 35px;
+ .informations {
+   padding-right: 45px;
  }
 
- @media screen and (min-width:350, max-width:633) {
+ .livraison {
+   padding-left: 45px;
+ }
+
+  /* Media Queries */
+
+ @media screen and (min-width:320) and (max-width:600) {
    .is-layout-flow.wp-block-column {
      display: flex;
      flex-direction: column;

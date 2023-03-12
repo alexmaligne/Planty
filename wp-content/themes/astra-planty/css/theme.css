@@ -46,6 +46,12 @@ p {
     background-position: 28% center, 70% center; 
 }
 
+.colonneGauche {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
 .fraiseAccueil {
    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
    background-repeat: no-repeat;
@@ -83,7 +89,6 @@ p {
    font-size: 48px;
    font-weight: 800;
 }
-
 
 h3 {    
    display: flex;
@@ -173,6 +178,10 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
    font-size: 30px;
 }
 
+table {
+   border: none;
+}
+
 .cf7quantites td {
    border-bottom: none;
    border-left: none;
@@ -221,15 +230,15 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
  .cf7quantites h6 {
-    font-family: "syne";
-    font-size: 20px;
-    color: white;
+   font-family: "syne";
+   font-size: 20px;
+   color: white;
  }
 
 .field-quantity {
    display: flex;
    border-radius: 8px;
-   width: 110px;
+   width: 100px;
 }
 
 .field-quantity .wpcf7-form-control.wpcf7-text {
@@ -239,6 +248,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
    border-bottom-right-radius: 0px;
    height: 65px;
    margin-bottom: 40px;
+   text-align: center;
 }
 
 .ajouter, .soustraire {
@@ -259,7 +269,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 .cf7quantites input.wpcf7-form-control.has-spinner.wpcf7-submit {
-   width: 150%;
+   width: 148%;
    height: 65px;
    border-radius: 5px;
    background-color: #E0B9B4;
@@ -271,38 +281,35 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
  .alignementBoutons {
    margin-top: 15px;
+   padding-right: 40px;
    display: flex;
    justify-content: space-between;
  }
 
  /* Formulaire de commande - Commander */
+.cf7commander tbody {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
 .cf7commander h4 {
    color: white; 
    font-size: 30px;
  }
 
 div.cf7commander {
-    color: white; 
- }
- 
-table {
-    border: none;
+   color: white; 
  }
 
- .cf7commander td {
-    border-left: none;
-    border-bottom: none;
- }
+.cf7commander td {
+   border-left: none;
+   border-bottom: none;
+}
 
- .cf7commander td:last-child {
-    border-right: none;
- }
-
- .alignementChamps {
-   display: flex;
-   flex-direction: row;
- }
-
+.livraison {
+   border-right: none;
+}
 
 /* Media Queries Tablettes */
 @media screen and (min-width:769px) and (max-width:992px) {

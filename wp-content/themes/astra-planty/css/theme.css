@@ -8,10 +8,13 @@
 }
 
 img.custom-logo {
-
+   position: absolute;
+   left: 3%;
 }
 
-div.ast-mobile-header-content.content-align-flex-start  {
+div.ast-main-header-bar-alignment {
+   position: absolute;
+   right: 0%;
 }
 
 /* Mise en forme footer  */

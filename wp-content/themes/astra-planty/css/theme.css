@@ -7,6 +7,13 @@
    color: white
 }
 
+img.custom-logo {
+
+}
+
+div.ast-mobile-header-content.content-align-flex-start  {
+}
+
 /* Mise en forme footer  */
 .site-footer {
    font-size: 16px;
@@ -108,7 +115,7 @@ h3 {
    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
    background-size: 180px;
    background-repeat: no-repeat;
-   background-position: 15% 20%;  
+   background-position: 10% 20%;  
    border-bottom-right-radius: 50% 20%;
    border-bottom-left-radius: 50% 20%;
 }
@@ -117,7 +124,7 @@ h3 {
    background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
    background-size: 200px;
    background-repeat: no-repeat;
-   background-position: 90% 100%;  
+   background-position: 100% 100%;  
 }
 
  /* Formulaire de contact */
@@ -170,6 +177,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
  /* Formulaire de commande - Quantités */
 .cf7quantites h4 {
+   padding-top: 40px;
    color: white;
    font-size: 30px;
 }
@@ -286,6 +294,7 @@ table {
 }
 
 .cf7commander h4 {
+   padding-top: 40px;
    color: white; 
    font-size: 30px;
 }
@@ -299,17 +308,47 @@ div.cf7commander {
    border-bottom: none;
 }
 
+.informations {
+   padding-right: 100px;
+}
+
 .livraison {
    border-right: none;
 }
 
+/* Media Queries Desktop */
+@media screen and (min-width:1024px) {
+   .blocNousRencontrer {
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
+      background-size: 150px;
+      background-repeat: no-repeat;
+      background-position: 5% 25%;  
+      border-bottom-right-radius: 50% 20%;
+      border-bottom-left-radius: 50% 20%;
+   }   
+}
+
 /* Media Queries Tablettes */
-@media screen and (min-width:769px) and (max-width:992px) {
-   h1 {
+@media screen and (min-width:600px) and (max-width:1024px) {
+   
+   /* Mise en forme Générale */
+   img.custom-logo {
+      width: 90%;
+   }
+   
+   div.ast-mobile-header-content.content-align-flex-start  {
+      font-size: 15px;
+   }
+
+   .site-footer {
+      font-size: 15px;
+   }
+
+   h1, .entry-content h1 {
       font-size: 30px;
    }
    
-   h2 {
+   h2.has-text-align-center.h2.has-text-color {
       font-size: 26px;
    }
 
@@ -317,7 +356,7 @@ div.cf7commander {
       font-size: 18px;
    }
 
-/* Mise en forme Page Accueil */
+   /* Mise en forme Page Accueil */
    div.is-layout-flex.wp-container-5.wp-block-columns {
       margin: 0%;
    }
@@ -328,8 +367,12 @@ div.cf7commander {
 
    .feuilles {
       background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png), url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-3.png);
-      background-size: 40%, 40%;
-      background-position: 18% 55%, 81% 55%; 
+      background-size: 35%, 35%;
+      background-position: 22% 55%, 76% 55%; 
+   }
+   
+   h3.has-text-align-center.has-text-color {
+      font-size: 26px;
    }
 
    .colonneGauche {
@@ -371,7 +414,7 @@ div.cf7commander {
    h3.has-text-align-center.fraiseAccueil.has-ast-global-color-5-color.has-text-color {
       margin: 0%;
    }
-      h3.has-text-align-center.framboiseAccueil.has-ast-global-color-5-color.has-text-color {
+   h3.has-text-align-center.framboiseAccueil.has-ast-global-color-5-color.has-text-color {
       margin: 0%;
    }
    h3.has-text-align-center.pamplemousseAccueil.has-ast-global-color-5-color.has-text-color {
@@ -382,98 +425,129 @@ div.cf7commander {
    }
 
   .fraiseAccueil strong, .pamplemousseAccueil strong, .framboiseAccueil strong, .citronAccueil strong {
-   font-size: 38px;
+      font-size: 38px;
+   }
+
+   .h2, .entry-content h2, .entry-content h4, h4 {
+      font-size: 26px;
    }
 
    .positionnementPhotos {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
    }
 
    figure.wp-block-media-text__media {
       width: 100%;
-      padding-left: 150px;
+      padding-left: 100px;
    }
 
    .textephoto {
       font-size: 15px;
    }
 
-/*Mise en forme Page Nous Renconter */
+   /*Mise en forme Page Nous Renconter */
    .paddingTop {
-   padding-top: 50px;
+      padding-top: 50px;
+   }
+
+   p.has-text-align-center {
+      white-space: nowrap;
+      overflow: auto;
    }
 
    .blocNousRencontrer {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
-   background-size: 130px;
-   background-position: 3% 15%;  
-   border-bottom-right-radius: 50% 20%;
-   border-bottom-left-radius: 50% 20%;
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
+      background-size: 130px;
+      background-position: 3% 15%;  
+      border-bottom-right-radius: 50% 20%;
+      border-bottom-left-radius: 50% 20%;
    }
 
    .blocEquipe {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
-   background-size: 120px;
-   background-position: 100% 100%;  
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
+      background-size: 120px;
+      background-position: 100% 100%;  
    }
 
    .fleur {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
-   background-size: 100px;
-   background-position: 29% 89%;  
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
+      background-size: 100px;
+      background-position: 31% 89%;  
    }
 
    .cf7contacter h5 {
-   text-align: center;
-   padding-bottom: 10px;
-   font-size: 28px;
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 26px;
    }
 
    form.wpcf7-form label {
-   font-size: 18px;
+      font-size: 18px;
    }
 
- /* Mise en forme Page Commander
+   /* Mise en forme Page Commander
     Formulaire de commande - Quantités */
    div.cf7quantites {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
    }
 
    .cf7quantites h4 {
-  color: white;
-  font-size: 28px;
+      padding-top: 30px;
+      color: white;
+      font-size: 26px;
    }
 
- /* Formulaire de commande - Commander */
+   /* Formulaire de commande - Commander */
    .cf7commander h4 {
-   font-size: 28px;
+      padding-top: 30px;
+      font-size: 26px;
    }
 
    .cf7quantites tr {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
    }
 
    .cf7commander tbody {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .informations {
+      border-right: none;
+      padding-right: 0px;
    }
 }
 
 /* Media Queries Smartphone */
- @media screen and (max-width:768px) {
-   h1 {
-      font-size: 28px;
+ @media screen and (min-width:320px) and (max-width:600px) {
+   
+   /* Mise en forme Générale */
+   img.custom-logo {
+      width: 75%;
+   }
+
+   div.ast-mobile-header-content.content-align-flex-start  {
+      font-size: 13px;
+   }
+
+   .site-footer {
+      font-size: 13px;
+   }
+
+   h1, .entry-content h1 {
+      font-size: 22px;
+      word-wrap: normal;
    }
    
-   h2 {
+   h2.has-text-align-center.h2.has-text-color {
       font-size: 22px;
    }
 
@@ -481,19 +555,20 @@ div.cf7commander {
       font-size: 16px;
    }
 
-   .textephoto {
-      font-size: 14px;
-   }
-
-/* Mise en forme Page Accueil */
+   /* Mise en forme Page Accueil */
    img.wp-image-38 {
       width: 70%;
    }
 
    .feuilles {
       background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png), url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-3.png);
-      background-size: 35%, 35%;
-      background-position: 23% 60%, 77% 60%; 
+      background-size: 50%, 50%;
+      background-position: 3% 60%, 97% 60%; 
+   }
+
+   p.has-text-align-center.p {
+      white-space: nowrap;
+      overflow: auto;
    }
 
    .colonneGauche {
@@ -546,87 +621,101 @@ div.cf7commander {
    }
 
   .fraiseAccueil strong, .pamplemousseAccueil strong, .framboiseAccueil strong, .citronAccueil strong {
-   font-size: 30px;
+      font-size: 30px;
    }
 
-   .positionnementPhotos {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-around;
+   .h2, .entry-content h2, .entry-content h4, h4 {
+      font-size: 22px;
    }
-   
+ 
+   div.is-layout-flex.wp-container-11.wp-block-columns.alignwide.positionnementPhotos {
+      margin-left: 10%;
+      margin-right: 0px;
+   }
+
    figure.wp-block-media-text__media {
-   width: 100%;
-   padding-left: 100px;
+      width: 50%;
+      padding-left: 0px;
    }
    
    .textephoto {
-   font-size: 14px;
+      font-size: 14px;
    }
 
-/*Mise en forme Page Nous Renconter */
+   /*Mise en forme Page Nous Renconter */
    .paddingTop {
-   padding-top: 50px;
+      padding-top: 25px;
+   }
+
+   p.has-text-align-center {
+      white-space: nowrap;
+      overflow: auto;
+   }
+
+   .blocNousRencontrer {
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
+      background-size: 70px;
+      background-position: 3% 8%;  
+      border-bottom-right-radius: 50% 20%;
+      border-bottom-left-radius: 50% 20%;
+   }
+
+   .blocEquipe {
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
+      background-size: 115px;
+      background-position: 95% 100%;  
+   }
+
+   .fleur {
+      background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
+      background-size: 80px;
+      background-position: -15% 88%;  
+   }
+
+   .cf7contacter h5 {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 22px;
+   }
+
+   form.wpcf7-form label {
+      font-size: 16px;
 }
 
-.blocNousRencontrer {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-2.png);
-   background-size: 100px;
-   background-position: 3% 15%;  
-   border-bottom-right-radius: 50% 20%;
-   border-bottom-left-radius: 50% 20%;
-}
-
-.blocEquipe {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-4.png);
-   background-size: 150px;
-   background-position: 90% 100%;  
-}
-
-.fleur {
-   background-image: url(http://localhost:81/Planty/wp-content/uploads/2023/02/Group-16.png);
-   background-size: 100px;
-   background-position: 24% 90%;  
-}
-
-.cf7contacter h5 {
-   text-align: center;
-   padding-bottom: 10px;
-   font-size: 22px;
-}
-
-form.wpcf7-form label {
-   font-size: 16px;
-}
-
- /* Mise en forme Page Commander
+   /* Mise en forme Page Commander
     Formulaire de commande - Quantités */
-div.cf7quantites {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
+   div.cf7quantites {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
 
-.cf7quantites h4 {
-  color: white;
-  font-size: 22px;
-}
+   .cf7quantites h4 {
+      padding-top: 20px;
+      color: white;
+      font-size: 22px;
+   }
 
- /* Formulaire de commande - Commander */
-.cf7commander h4 {
-   font-size: 22px;
-}
+   /* Formulaire de commande - Commander */
+   .cf7commander h4 {
+      padding-top: 20px;
+      font-size: 22px;
+   }
 
-.cf7quantites tr {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
+   .cf7quantites tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
 
-.cf7commander tbody {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
+   .cf7commander tbody {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .informations {
+      border-right: none;
+      padding-right: 0px;
+   }
 }
